@@ -1,4 +1,4 @@
-ayush.tech
+# ayush.tech
 
 ```shell
     git clone https://github.com/AyushSingh13/ayush.tech.git
