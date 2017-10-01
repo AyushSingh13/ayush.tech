@@ -1,0 +1,19 @@
+.UCL {
+    color: #B5bd00;
+}
+
+.UCL:hover {
+    color: #2c3e50;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+.JHU {
+    color: #418FDE;
+}
+
+.JHU:hover {
+    color: #2c3e50;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
