@@ -1,8 +1,26 @@
 import React from 'react'
 
+import headshot from './img/headshot.jpg'
+
+const headshotStyle = {
+    borderRadius: `50%`,
+    height: `11rem`,
+    width: `11rem`
+}
+
+const aboutStyle = {
+    padding: `0 12em 0 12em`,
+    minHeight: `100vh`,
+    display: `flex`,
+    flexDirection: `column`,
+    justifyContent: `center`,
+    alignItems: `center`
+}
+
 export default () => (
-    <main style={{ padding: `0 4rem 0 4rem`, minHeight: `100vh`, display: `flex`, flexDirection: `column`, justifyContent: `center`, flexGrow: 1}}>
-        <h1>About</h1>
+    <main style={aboutStyle}>
+        <img src={headshot} style={headshotStyle} />
+        <div style={{ overflow: `auto` }}>
         <p>
         I am a 4th year student studying Electrical & Electronic Engineering (MEng) at University College London. 
         While exploring my career choices at the end of my second year, I found myself drawn into the London startup scene through talks organised by Entrepreneur First. 
@@ -19,5 +37,6 @@ export default () => (
         I hope to further develop my software engineering skills and use them to make an impact. 
         <br/><br/>
         </p>
+        </div>
     </main>
 )

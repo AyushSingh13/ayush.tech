@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import styles from './styles.module.css'
+import ContactBar from '../components/ContactBar'
 
 const uclAnchor = <a className={styles.UCL} href='http://www.ucl.ac.uk/'>UCL</a>
 const jhuAnchor = <a className={styles.JHU} href='https://www.jhu.edu/'>Johns Hopkins</a>
@@ -14,6 +15,7 @@ const pageStyle = {
 }
 
 export default () => (
+    <div>
     <main style={pageStyle}>
         <h1>I'm Ayush Singh.</h1>
         <h2>Aspiring software engineer, data scientist and entrepreneur.</h2>
@@ -21,4 +23,8 @@ export default () => (
             Fourth year student at {uclAnchor}, former {jhuAnchor} exchange student. 
         </h6>
     </main>
+    <footer>
+        <ContactBar />
+    </footer>
+    </div>
 )

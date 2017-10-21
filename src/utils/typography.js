@@ -1,8 +1,7 @@
 import Typography from 'typography'
-import moraga from 'typography-theme-moraga'
 
 const typography = new Typography({
-    baseFontSize: '18px',
+    baseFontSize: '16px',
     googleFonts: [  
         {
             name: 'Poppins',
@@ -15,15 +14,21 @@ const typography = new Typography({
     bodyGray: 100,
     bodyWeight: 200,
     bodyFontFamily: ['helvetica'],
-    overrideStyles: () => ({
+    overrideStyles: ({ adjustFontSizeTo, rhythm }) => ({
         h1: {
             fontSize: '100px',
+            // ...adjustFontSizeTo('100px')
         },
         h2: {
             fontSize: '40px'
+            // ...adjustFontSizeTo('40px')
         },
         h6: {
             fontSize: '25px'
+            // ...adjustFontSizeTo('25px')
+        },
+        p: {
+            fontSize: '14px'
         },
         'a, a:visited': {
             textDecoration: 'none'
@@ -34,4 +39,6 @@ const typography = new Typography({
     })
 })
 
-module.exports = typography
+// module.exports = typography
+
+export default typography

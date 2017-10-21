@@ -5,26 +5,25 @@ import styles from './styles.module.css'
 const links = [
     {
         name: `AyushSingh(beta)`,
-        to: `/`
+        to: `/`,
+        id: 1
     },
     {
         name: `about`,
-        to: `/about`
+        to: `/about`,
+        id: 2
     },
     {
         name: `blog`,
-        to: `/blog`
+        to: `/blog`,
+        id: 3
     },
 ]
-
-function activateClick() {
-    
-}
 
 export default () => (
     <nav className={styles.siteNavLinks}>
         {links.map(link => (
-            <Link to={link.to} className={styles.link}>{link.name}</Link>
+            <Link key={link.id} to={link.to} className={styles.link}>{link.name}</Link>
         ))}
     </nav>
 )

@@ -1,3 +1,12 @@
+footer {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    padding: 1.5em;
+}
+
 .UCL {
     color: #B5bd00;
 }

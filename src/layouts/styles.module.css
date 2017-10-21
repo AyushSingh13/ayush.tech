@@ -6,15 +6,6 @@ header {
     padding: 1.5em;
 }
 
-footer {
-    display: flex;
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    justify-content: center;
-    padding: 1.5em;
-}
-
 ::selection {
     color: white;
     background: black;

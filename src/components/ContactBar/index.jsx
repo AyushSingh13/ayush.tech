@@ -20,7 +20,7 @@ const contactsMetadata = [
     },
     {
         title: 'Resume/CV',
-        href: '',
+        href: 'https://www.dropbox.com/s/b2vsopcdtv1ngl6/UCL_Ayush_Singh.pdf?dl=0',
         icon: '',
         colors: `#e74c3c`
 
