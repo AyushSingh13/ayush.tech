@@ -29,7 +29,6 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <script src="https://widget.battleforthenet.com/widget.js" async></script>
           {this.props.headComponents}
           {css}
         </head>
