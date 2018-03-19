@@ -5,10 +5,9 @@ import ContactBar from "../components/ContactBar"
 import styles from "./styles.module.css"
 import WIP from '../components/WIP'
 
-export default ({ children }) =>
+export default ({ children }) => 
   <div>
-    <header>
-      <NavBar />
-    </header>
     {children()}
+    <footer>
+    </footer>
   </div>

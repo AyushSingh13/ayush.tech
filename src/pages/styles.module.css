@@ -1,28 +1,17 @@
-footer {
-    display: flex;
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    justify-content: center;
-    padding: 1.5em;
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300');
+
+#shortBio {
+    font-size: 19px;
+    /* color: #aaaaaa; */
+    font-weight: 100;
+    font-family: 'Lato', 'Helvetica Neue';
 }
 
-.UCL {
-    color: #B5bd00;
+#singh {
+    color: #e74c3c
 }
 
-.UCL:hover {
-    color: #2c3e50;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-}
-
-.JHU {
-    color: #418FDE;
-}
-
-.JHU:hover {
-    color: #2c3e50;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
+h1 {
+    font-weight: 300;
+    font-family: 'Lato', 'Helvetica Neue';
 }

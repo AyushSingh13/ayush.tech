@@ -2,29 +2,33 @@ import React from "react"
 import Link from 'gatsby-link'
 import styles from './styles.module.css'
 import ContactBar from '../components/ContactBar'
-
-const uclAnchor = <a className={styles.UCL} href='http://www.ucl.ac.uk/'>UCL</a>
-const jhuAnchor = <a className={styles.JHU} href='https://www.jhu.edu/'>Johns Hopkins</a>
+import headshot from '../static/headshot.jpg'
 
 const pageStyle = {
-    padding: `40px 5em 58px 5em`,
+    minWidth: `100vw`,
     minHeight: `100vh`,
     display: `flex`,
-    flexDirection: `column`,
+    alignItems: `center`,
     justifyContent: `center`,
 }
 
+const nameStyle = {
+    marginBottom: `10px`
+}
+
+const headshotStyle = {
+    borderRadius: `100%`,
+    height: `7rem`,
+    width: `7rem`
+}
+
 export default () => (
-    <div>
-    <main style={pageStyle}>
-        <h1>I'm Ayush Singh.</h1>
-        <h2>Aspiring software engineer, data scientist and entrepreneur.</h2>
-        <h6>
-            Fourth year student at {uclAnchor}, former {jhuAnchor} exchange student. 
-        </h6>
-    </main>
-    <footer>
-        <ContactBar />
-    </footer>
+    <div style={pageStyle}>
+        <main style={{ display: `flex`, flexDirection: `column`, alignItems: `center` }}>
+            <img style={headshotStyle} src={headshot} />
+            <h1 style={nameStyle}>ayush <span id={styles.singh}>singh</span></h1>
+            <span id={styles.shortBio}>software engineer | london | united kingdom</span>
+            <ContactBar />
+        </main>
     </div>
 )
