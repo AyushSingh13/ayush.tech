@@ -8,7 +8,7 @@ import instagramLogo from './logos/#e74c3c/instagram-logo.svg'
 import cvSymbol from './logos/#e74c3c/cv-symbol.svg'
 import spotifyLogo from './logos/#e74c3c/spotify-logo.svg'
 
-const contactsMetadata = [      
+const contactsMetadata = [
     {
         title: 'GitHub',
         href: 'https://github.com/AyushSingh13',
@@ -65,12 +65,18 @@ const contactBarStyle = {
 
 export default () => (
     <nav style={contactBarStyle}>
-            {
-                contactsMetadata.map(
-                    entry => <a style={{ height: `1.5em`, width: `1.5em`, margin: 0 }} key={entry.title} href={entry.href} colors={entry.colors}>
+        {
+            contactsMetadata.map(
+                entry =>
+                    <a
+                        style={{ height: `1.5em`, width: `1.5em`, margin: 0 }}
+                        key={entry.title}
+                        href={entry.href}
+                        colors={entry.colors}
+                    >
                         <img src={entry.icon} alt={entry.title} />
                     </a>
-                )
-            }
+            )
+        }
     </nav>
 )
