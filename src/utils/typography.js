@@ -33,6 +33,4 @@ const typography = new Typography({
     })
 })
 
-// module.exports = typography
-
 export default typography
