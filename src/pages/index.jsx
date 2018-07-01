@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import styled from 'styled-components';
+
 import ContactBar from '../components/ContactBar'
 import headshot from '../static/headshot.jpg'
 
@@ -10,6 +11,12 @@ const Page = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const NameHeader = styled.h1`
@@ -34,11 +41,11 @@ const ShortBio = styled.div`
 
 export default () => (
     <Page>
-        <main style={{ display: `flex`, flexDirection: `column`, alignItems: `center` }}>
+        <Main>
             <Image size="7em" src={headshot} />
             <NameHeader>ayush <RedTextSpan>singh</RedTextSpan></NameHeader>
             <ShortBio>software engineer | london | united kingdom</ShortBio>
             <ContactBar />
-        </main>
+        </Main>
     </Page>
 );
