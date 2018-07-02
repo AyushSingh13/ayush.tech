@@ -9,10 +9,10 @@ The technologies and libraries used to make this website include:
 
 ### Installation
 
-In case you'd like to use the basic aesthtics/structure of this website as the base to build your own website upon (I'm honoured!), clone the repo and install all the necessary node packages, like so:
+In case you'd like to use the basic aesthtics/structure of this website as the base for your own website (I'm honoured!), clone the repo and install all the necessary node packages, like so:
 
 ```shell
-$ git clone https://github.com/AyushSingh13/ayush.tech.git
+$ git clone https://github.com/AyushSingh13/website.git
 $ yarn install
 ```
 
