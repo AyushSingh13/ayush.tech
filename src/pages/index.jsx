@@ -1,9 +1,9 @@
-import React from "react"
-import Link from 'gatsby-link'
-import styled from 'styled-components';
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
 
-import ContactBar from '../components/ContactBar'
-import headshot from '../static/headshot.jpg'
+import ContactBar from "../components/ContactBar";
+import headshot from "../static/headshot.jpg";
 
 const Page = styled.div`
   min-width: 100vw;
@@ -34,18 +34,20 @@ const Image = styled.img`
 `;
 
 const ShortBio = styled.div`
-  font-family: 'Lato', 'Helvetica Neue';
+  font-family: "Lato", "Helvetica Neue";
   font-weight: 100;
   font-size: 19px;
 `;
 
 export default () => (
-    <Page>
-        <Main>
-            <Image size="7em" src={headshot} />
-            <NameHeader>ayush <RedTextSpan>singh</RedTextSpan></NameHeader>
-            <ShortBio>software engineer | london | united kingdom</ShortBio>
-            <ContactBar />
-        </Main>
-    </Page>
+  <Page>
+    <Main>
+      <Image size="7em" src={headshot} />
+      <NameHeader>
+        ayush <RedTextSpan>singh</RedTextSpan>
+      </NameHeader>
+      <ShortBio>software engineer | london | united kingdom</ShortBio>
+      <ContactBar />
+    </Main>
+  </Page>
 );

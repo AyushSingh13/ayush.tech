@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import styled from "styled-components";
 
 const Page = styled.div`
@@ -13,7 +14,13 @@ const PostList = styled.div`
   width: 50%;
 `;
 
-const PostLink = styled.div`
+const PostLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  color: inherit;
+
   cursor: pointer;
   padding: 0.5rem;
   transition: 0.1s all;
@@ -52,7 +59,7 @@ export default ({ data }) => (
     <PostList>
       <PostCount>{data.allMarkdownRemark.totalCount} Posts</PostCount>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <PostLink key={node.id}>
+        <PostLink key={node.id} to={node.fields.slug}>
           <PostLinkHeader>
             <PostTitle>{node.frontmatter.title}</PostTitle>
             <PostDate>{node.frontmatter.date}</PostDate>
@@ -66,10 +73,13 @@ export default ({ data }) => (
 
 export const query = graphql`
   query PostQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
+          fields {
+            slug
+          }
           id
           frontmatter {
             title
