@@ -72,9 +72,8 @@ export default () => (
                         style={{ height: `1.5em`, width: `1.5em`, margin: 0 }}
                         key={entry.title}
                         href={entry.href}
-                        colors={entry.colors}
                     >
-                        <img src={entry.icon} alt={entry.title} />
+                        <img style={{ margin: 0 }} src={entry.icon} alt={entry.title} />
                     </a>
             )
         }
