@@ -10,7 +10,7 @@ const Page = styled.div`
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; bb
 `;
 
 const Main = styled.main`
@@ -36,7 +36,11 @@ const Image = styled.img`
 const ShortBio = styled.div`
   font-family: "Lato", "Helvetica Neue";
   font-weight: 100;
-  font-size: 19px;
+  font-size: 1.2rem;
+
+  @media (max-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 export default () => (
