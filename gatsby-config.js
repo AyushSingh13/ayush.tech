@@ -9,7 +9,12 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: ["gatsby-remark-prismjs"]
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
