@@ -2,16 +2,20 @@ import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
 
+import LandingPage from "../components/ui-components/LandingPage";
+
 import ContactBar from "../components/ContactBar";
 import headshot from "../static/headshot.jpg";
 
-const Page = styled.div`
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; bb
-`;
+// const Page = styled.div`
+//   min-width: 100vw;
+//   min-height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: black;
+//   color: white;
+// `;
 
 const Main = styled.main`
   display: flex;
@@ -44,7 +48,7 @@ const ShortBio = styled.div`
 `;
 
 export default () => (
-  <Page>
+  <LandingPage>
     <Main>
       <Image size="7em" src={headshot} />
       <NameHeader>
@@ -53,5 +57,5 @@ export default () => (
       <ShortBio>software engineer | london | united kingdom</ShortBio>
       <ContactBar />
     </Main>
-  </Page>
+  </LandingPage>
 );

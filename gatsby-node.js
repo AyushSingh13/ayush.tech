@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
+exports.createPages = async ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
   return new Promise((resolve, reject) => {
     graphql(`
@@ -40,5 +40,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       );
       resolve();
     });
+  });
+};
+
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators;
+  return new Promise((resolve, reject) => {
+    if (page.path.match(/^\/notes/)) {
+      console.log("PATH: ", page.path);
+      page.layout = "notesList";
+      createPage(page);
+    }
+    resolve();
   });
 };
