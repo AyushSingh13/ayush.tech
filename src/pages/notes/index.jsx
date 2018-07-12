@@ -34,7 +34,7 @@ const PostLink = styled(Link)`
   transition: 0.1s all;
 
   &:hover {
-    background-color: #f5f6fa;
+    background-color: #2d3436;
   }
 `;
 
@@ -55,7 +55,6 @@ const PostTitle = styled.h1`
 const PostDate = styled.h5`
   font-weight: 100;
   maring: 0;
-  opacity: 0.7;
 `;
 
 const PostExcerpt = styled.p`
