@@ -4,7 +4,7 @@ The primary reason that has led to the creation of this blog is to relieve the p
 
 The technologies and libraries used to make this website include:
 
-- GatsbyJS (with the beloved React, of course) :heart:
+- GatsbyJS (built on top of the beloved React, of course) :heart:
 - styled-components
 
 ### Installation
