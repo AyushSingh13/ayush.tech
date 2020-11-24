@@ -53,7 +53,7 @@ const PostTitle = styled.h1`
 `;
 
 const PostDate = styled.h5`
-  font-weight: 100;
+  font-weight: 300;
   maring: 0;
 `;
 

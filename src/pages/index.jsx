@@ -39,7 +39,7 @@ const Image = styled.img`
 
 const ShortBio = styled.div`
   font-family: "Lato", "Helvetica Neue";
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2rem;
 
   @media (max-width: 320px) {

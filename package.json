@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "ayush.dev",
+  "description": "Ayush Singh's personal blog",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
